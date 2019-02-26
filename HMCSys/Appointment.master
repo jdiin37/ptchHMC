@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Appointment.master.cs" Inherits="HMCSys.Appointment" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadNestedContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!--套餐選單-->
+    <div id="push_menu">
+        <nav>
+            <h2>
+                <i class="fa fa-reorder"></i>健檢項目選擇</h2>
+            <ul>
+                <li><a href="#"><i class="fa fa-folder-o" aria-hidden="true"></i>套餐健檢</a>
+                    <h2>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>套餐健檢</h2>
+                    <ul>
+                        <li><a href="#">門快</a> </li>
+                        <li><a href="#">關保</a> </li>
+                        <li><a href="#">公務員</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>勞工健檢</a>
+                    <h2>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>勞工健檢</h2>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>特約公司</a>
+                            <h2>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>特約公司</h2>
+                            <ul>
+                                <li><a href="#">南化(一般)</a> </li>
+                                <li><a href="#">南化(一般+噪音)</a> </li>
+                                <li><a href="#">明揚(一般)</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>一般勞工</a>
+                            <h2>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>一般勞工</h2>
+                            <ul>
+                                <li><a href="#">體格檢查</a> </li>
+                                <li><a href="#">一般勞工</a> </li>
+                                <li><a href="#">一般+供繕</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>預防保健</a>
+                    <h2>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>預防保健</h2>
+                    <ul>
+                        <li><a href="#">成人健檢</a> </li>
+                        <li><a href="#">大腸癌篩檢</a> </li>
+                        <li><a href="#">口腔癌篩檢</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>團檢</a>
+                    <h2>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>團檢</h2>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>保險公司</a>
+                            <h2>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>保險公司</h2>
+                            <ul>
+                                <li><a href="#">套餐一</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>個體戶</a>
+                            <h2>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>個體戶</h2>
+                            <ul>
+                                <li><a href="#">VIP(含民代)</a> </li>
+                                <li><a href="#">個人</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>公司團體</a>
+                            <h2>
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>公司團體</h2>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>外出團檢</a>
+                                    <h2>
+                                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>外出團檢</h2>
+                                    <ul>
+                                        <li><a href="#">學生體檢</a> </li>
+                                        <li><a href="#">外出公司</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>院內團檢</a>
+                                    <h2>
+                                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>院內團檢</h2>
+                                    <ul>
+                                        <li><a href="#">到院公司</a> </li>
+                                        <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>鴻諭公司</a>
+                                            <h2>
+                                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>鴻諭公司</h2>
+                                            <ul>
+                                                <li><a href="#">前體檢</a> </li>
+                                                <li><a href="#">後體檢</a> </li>
+                                                <li><a href="#">複檢</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>駕照體檢</a>
+                    <h2>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>駕照體檢</h2>
+                    <ul>
+                        <li><a href="#">機車</a> </li>
+                        <li><a href="#">汽車</a> </li>
+                        <li><a href="#">審驗</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--//套餐選單-->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="alert alert-info" role="alert">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                病歷號</div>
+                            <asp:TextBox ID="txtReg_No_Show" runat="server" CssClass="form-control" ClientIDMode="Static" ReadOnly="true"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                身分證字號</div>
+                            <asp:TextBox ID="txtId_No_Show" runat="server" CssClass="form-control" ClientIDMode="Static" ReadOnly="true"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                姓名</div>
+                            <asp:TextBox ID="txtName_Show" runat="server" CssClass="form-control" ClientIDMode="Static" ReadOnly="true"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                性別</div>
+                            <asp:DropDownList ID="ddlSex_Show" runat="server" CssClass="form-control" ClientIDMode="Static" Enabled="false">
+                                <asp:ListItem Value="1">男</asp:ListItem>
+                                <asp:ListItem Value="2">女</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                出生年月日</div>
+                            <asp:TextBox ID="txtBirth_Show" runat="server" CssClass="form-control" ClientIDMode="Static" ReadOnly="true"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="MainNestedContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<script type="text/javascript">
+        $(document).ready(function () {
+            var aaa = '<%=Session["Reg_No"].ToString() %>';
+            $.ajax({
+                type: 'post',
+                url: "./WebService.asmx/GetPatientData",
+                data: "{ strParam: '" + +"' }",
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                success: function (data) {
+                    var items = $.parseJSON(data.d);
+                    if (items != null) {
+                        $("#txtReg_no_Show").val(items[0].reg_no);
+                        $("#txtId_No_Show").val(items[0].id_no);
+                        $("#txtName_Show").val(items[0].p_name);
+                        $("#txtBirth_Show").val(items[0].birthday);
+                        $("#ddlSex_Show").val(items[0].sex).change();
+                    } else {
+                        alert("查無病患資料");
+                        $('#divModal').modal('show');
+                    }
+                },
+                error: function () {
+                    alert("Failed");
+                }
+            })
+        });
+    </script>--%>
+</asp:Content>

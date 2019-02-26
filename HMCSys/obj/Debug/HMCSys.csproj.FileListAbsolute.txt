@@ -1,0 +1,5 @@
+D:\TFS\HMCSys\HMCSys\HMCSys\bin\HMCSys.dll
+D:\TFS\HMCSys\HMCSys\HMCSys\bin\HMCSys.pdb
+D:\TFS\HMCSys\HMCSys\HMCSys\obj\Debug\HMCSys.dll
+D:\TFS\HMCSys\HMCSys\HMCSys\obj\Debug\HMCSys.pdb
+D:\TFS\HMCSys\HMCSys\HMCSys\obj\Debug\HMCSys.csprojResolveAssemblyReference.cache

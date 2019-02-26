@@ -1,0 +1,189 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HMCSys.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>後臺管理系統</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--[if !IE]> -->
+    <link href="<%= ResolveUrl("~/font-awesome-4.3.0/css/font-awesome.min.css") %>" rel="stylesheet">
+    <!-- <![endif]-->
+    <!--[if gte IE 9]>
+        <link href="<%= ResolveUrl("~/font-awesome-4.3.0/css/font-awesome.min.css") %>" rel="stylesheet">
+        <![endif]-->
+    <!-- Bootstrap core CSS -->
+    <link href="<%= ResolveUrl("~/bootstrap-3.3.4-dist/css/bootstrap.css") %>" rel="stylesheet">
+    <!-- Custom Theme -->
+    <link href="<%= ResolveUrl("~/css/dashboard.css") %>" rel="stylesheet">
+    <!-- MetisMenu -->
+    <link href="<%= ResolveUrl("~/css/metisMenu.css") %>" rel="stylesheet">
+    <!-- JQuery UI -->
+    <link href="<%= ResolveUrl("~/css/jquery-ui.css") %>" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="<%= ResolveUrl("~/css/select2.css") %>" rel="stylesheet">
+    <link href="<%= ResolveUrl("~/css/select2-bootstrap.css") %>" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-1.11.3.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-migrate-1.2.1.min.js") %>"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="<%= ResolveUrl("~/Scripts/html5shiv.min.js") %>"></script>
+      <script src="<%= ResolveUrl("~/Scripts/respond.min.js") %>"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--AlertModal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="alertModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        系統訊息</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <span id="alertMsg">One fine body&hellip;</span></p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        確定</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--//AlertModal-->
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<%= ResolveUrl("~/Default.aspx") %>">後臺管理系統</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <asp:PlaceHolder ID="panelLogin" runat="server"></asp:PlaceHolder>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <%--<li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>--%>
+                        <li><a href="<%= ResolveUrl("~/Default.aspx") %>"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;首頁</a> </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;客戶資訊<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="<%= ResolveUrl("~/PatientDetails.aspx") %>">&nbsp;客戶資訊</a> </li>
+                                <li><a href="<%= ResolveUrl("~/AppointOnsite.aspx") %>">&nbsp;現場掛號</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;客戶歷史健檢紀錄</a> </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;掛號<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="<%= ResolveUrl("~/AdultHealth.aspx") %>">&nbsp;成健二階掛號</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;預約健檢</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;現場掛號</a> </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;團檢<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;批次掛號</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;批次列印檢驗單</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;客戶資料匯出</a> </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;套餐維護<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="<%= ResolveUrl("~/PkgRelative.aspx") %>">&nbsp;階層管理</a> </li>
+                                <li><a href="<%= ResolveUrl("~/PkgIndex.aspx") %>">&nbsp;套餐維護</a> </li>
+                                <li><a href="<%= ResolveUrl("~/RunDown.aspx") %>">&nbsp;檢查流程維護</a> </li>
+                                <li><%--<a href="<%= ResolveUrl("~/PkgRunDown.aspx") %>">&nbsp;套餐流程維護</a>--%> </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;健檢報告<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;檢查項目維護</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;報告查詢</a> </li>
+                                <li><a href="<%= ResolveUrl("~/#") %>">&nbsp;注意事項填寫提醒</a> </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li><a href="<%= ResolveUrl("~/RunDownScan.aspx") %>"><i class="glyphicon glyphicon-check"></i>&nbsp;客戶健檢進度</a> </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <%--<div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-header">
+                        <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;<%= Page.Title %></h4>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->--%>
+            <form role="form" id="myForm" runat="server" class="form-horizontal">
+            <asp:HiddenField ID="hfReg_No" runat="server" ClientIDMode="Static" />
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <asp:Label ID="lbMsg" runat="server" Font-Bold="True" ForeColor="#FF5050"></asp:Label>
+                    </p>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Bootstrap core JavaScript -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script type="text/javascript" src="<%= ResolveUrl("~/bootstrap-3.3.4-dist/js/bootstrap.js") %>"></script>
+            <!-- JQuery UI -->
+            <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-ui.js") %>"></script>
+            <!-- MetisMenu -->
+            <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/metisMenu.js") %>"></script>
+            <!-- Select2 -->
+            <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/select2.full.js") %>"></script>
+            <!-- Custom Theme -->
+            <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/dashboard.js") %>"></script>
+            <script type="text/javascript">
+                function showAlert(Msg) {
+                    $('#alertMsg').text(Msg);
+                    $('#alertModal').modal('show');
+                }
+            </script>
+            </form>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+</body>
+</html>

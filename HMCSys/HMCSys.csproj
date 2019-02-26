@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFA2D1CD-80CA-4DCF-A616-1E72ABFBFEB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HMCSys</RootNamespace>
+    <AssemblyName>HMCSys</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdultHealth.aspx" />
+    <Content Include="AjaxForm.aspx" />
+    <Content Include="AppointOnsite.aspx" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\npm.js" />
+    <Content Include="ClassAddEdit.aspx" />
+    <Content Include="css\bootstrap-combobox.css" />
+    <Content Include="css\bs-tree-view.css" />
+    <Content Include="css\dashboard.css" />
+    <Content Include="css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="css\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="css\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\images\ui-icons_666666_256x240.png" />
+    <Content Include="css\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.multilevelpushmenu-rtl.css" />
+    <Content Include="css\jquery.multilevelpushmenu.css" />
+    <Content Include="css\LoginTemplate\Images\login-box-backg.png" />
+    <Content Include="css\LoginTemplate\Images\login-btn.png" />
+    <Content Include="css\LoginTemplate\Images\templatemo_body.jpg" />
+    <Content Include="css\LoginTemplate\Images\templatemo_content_bottom.jpg" />
+    <Content Include="css\LoginTemplate\login-box.css" />
+    <Content Include="css\LoginTemplate\templatemo_style.css" />
+    <Content Include="css\metisMenu.css" />
+    <Content Include="css\select2-bootstrap.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="font-awesome-4.3.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.3.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.3.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\banner.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="PatientDetails.aspx" />
+    <Content Include="PermitEdit.aspx" />
+    <Content Include="PermitList.aspx" />
+    <Content Include="PkgAddEdit.aspx" />
+    <Content Include="PkgIndex.aspx" />
+    <Content Include="PkgRelative.aspx" />
+    <Content Include="PkgRelativeSet.aspx" />
+    <Content Include="PkgRunDown.aspx" />
+    <Content Include="PkgRunDownSet.aspx" />
+    <Content Include="RunDown.aspx" />
+    <Content Include="RunDownAddEdit.aspx" />
+    <Content Include="RunDownScan.aspx" />
+    <Content Include="Scripts\bootstrap-combobox.js" />
+    <Content Include="Scripts\dashboard.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.multilevelpushmenu-rtl.js" />
+    <Content Include="Scripts\jquery.multilevelpushmenu.min.js" />
+    <Content Include="Scripts\metisMenu.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\select2.full.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="UserPermit.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdultHealth.aspx.cs">
+      <DependentUpon>AdultHealth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultHealth.aspx.designer.cs">
+      <DependentUpon>AdultHealth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxForm.aspx.cs">
+      <DependentUpon>AjaxForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxForm.aspx.designer.cs">
+      <DependentUpon>AjaxForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.master.cs">
+      <DependentUpon>Appointment.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointment.master.designer.cs">
+      <DependentUpon>Appointment.master</DependentUpon>
+    </Compile>
+    <Compile Include="AppointOnsite.aspx.cs">
+      <DependentUpon>AppointOnsite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppointOnsite.aspx.designer.cs">
+      <DependentUpon>AppointOnsite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAddEdit.aspx.cs">
+      <DependentUpon>ClassAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassAddEdit.aspx.designer.cs">
+      <DependentUpon>ClassAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.master.cs">
+      <DependentUpon>Details.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.master.designer.cs">
+      <DependentUpon>Details.master</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Connection.cs" />
+    <Compile Include="Lib\Encryption.cs" />
+    <Compile Include="Lib\Mail.cs" />
+    <Compile Include="Lib\ODBCConnection.cs" />
+    <Compile Include="Lib\PublicLib.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientDetails.aspx.cs">
+      <DependentUpon>PatientDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientDetails.aspx.designer.cs">
+      <DependentUpon>PatientDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermitEdit.aspx.cs">
+      <DependentUpon>PermitEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermitEdit.aspx.designer.cs">
+      <DependentUpon>PermitEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermitList.aspx.cs">
+      <DependentUpon>PermitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermitList.aspx.designer.cs">
+      <DependentUpon>PermitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgAddEdit.aspx.cs">
+      <DependentUpon>PkgAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgAddEdit.aspx.designer.cs">
+      <DependentUpon>PkgAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgIndex.aspx.cs">
+      <DependentUpon>PkgIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgIndex.aspx.designer.cs">
+      <DependentUpon>PkgIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgRelative.aspx.cs">
+      <DependentUpon>PkgRelative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgRelative.aspx.designer.cs">
+      <DependentUpon>PkgRelative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgRelativeSet.aspx.cs">
+      <DependentUpon>PkgRelativeSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgRelativeSet.aspx.designer.cs">
+      <DependentUpon>PkgRelativeSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgRunDown.aspx.cs">
+      <DependentUpon>PkgRunDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgRunDown.aspx.designer.cs">
+      <DependentUpon>PkgRunDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PkgRunDownSet.aspx.cs">
+      <DependentUpon>PkgRunDownSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PkgRunDownSet.aspx.designer.cs">
+      <DependentUpon>PkgRunDownSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunDown.aspx.cs">
+      <DependentUpon>RunDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RunDown.aspx.designer.cs">
+      <DependentUpon>RunDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RunDownAddEdit.aspx.cs">
+      <DependentUpon>RunDownAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RunDownAddEdit.aspx.designer.cs">
+      <DependentUpon>RunDownAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RunDownScan.aspx.cs">
+      <DependentUpon>RunDownScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RunDownScan.aspx.designer.cs">
+      <DependentUpon>RunDownScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserPermit.aspx.cs">
+      <DependentUpon>UserPermit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPermit.aspx.designer.cs">
+      <DependentUpon>UserPermit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appointment.master" />
+    <None Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css.map" />
+    <None Include="bootstrap-3.3.4-dist\css\bootstrap.css.map" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Details.master" />
+    <None Include="font-awesome-4.3.0\fonts\fontawesome-webfont.eot" />
+    <None Include="font-awesome-4.3.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="font-awesome-4.3.0\fonts\fontawesome-webfont.woff" />
+    <None Include="font-awesome-4.3.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="font-awesome-4.3.0\fonts\FontAwesome.otf" />
+    <None Include="font-awesome-4.3.0\less\animated.less" />
+    <None Include="font-awesome-4.3.0\less\bordered-pulled.less" />
+    <None Include="font-awesome-4.3.0\less\core.less" />
+    <None Include="font-awesome-4.3.0\less\fixed-width.less" />
+    <None Include="font-awesome-4.3.0\less\font-awesome.less" />
+    <None Include="font-awesome-4.3.0\less\icons.less" />
+    <None Include="font-awesome-4.3.0\less\larger.less" />
+    <None Include="font-awesome-4.3.0\less\list.less" />
+    <None Include="font-awesome-4.3.0\less\mixins.less" />
+    <None Include="font-awesome-4.3.0\less\path.less" />
+    <None Include="font-awesome-4.3.0\less\rotated-flipped.less" />
+    <None Include="font-awesome-4.3.0\less\stacked.less" />
+    <None Include="font-awesome-4.3.0\less\variables.less" />
+    <None Include="font-awesome-4.3.0\scss\font-awesome.scss" />
+    <None Include="font-awesome-4.3.0\scss\_animated.scss" />
+    <None Include="font-awesome-4.3.0\scss\_bordered-pulled.scss" />
+    <None Include="font-awesome-4.3.0\scss\_core.scss" />
+    <None Include="font-awesome-4.3.0\scss\_fixed-width.scss" />
+    <None Include="font-awesome-4.3.0\scss\_icons.scss" />
+    <None Include="font-awesome-4.3.0\scss\_larger.scss" />
+    <None Include="font-awesome-4.3.0\scss\_list.scss" />
+    <None Include="font-awesome-4.3.0\scss\_mixins.scss" />
+    <None Include="font-awesome-4.3.0\scss\_path.scss" />
+    <None Include="font-awesome-4.3.0\scss\_rotated-flipped.scss" />
+    <None Include="font-awesome-4.3.0\scss\_stacked.scss" />
+    <None Include="font-awesome-4.3.0\scss\_variables.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54974</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
